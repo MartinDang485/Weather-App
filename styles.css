@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('city.jpg');
+}
+
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(51, 50, 46);
+}
+
+.searchbar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.search {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(51, 50, 46);
+    padding: 5px;
+    background-color: rgb(161, 158, 153);
+    color: white;
+    font-weight: bold;
+}
+
+.search:focus {
+    outline: none;
+}
+
+#submit {
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: rgb(219, 217, 213);
+    transition: 0.5s ease;
+}
+
+#temperature {
+    font-size: 25px;
+}

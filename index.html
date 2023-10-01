@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Roboto+Condensed&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="card">
         <div class="searchbar">
@@ -13,7 +18,11 @@
             <button id="submit">Submit</button>
         </div>
         <div class="city">
-            <p class="city-text">City</p>
+            <p class="city-text">Weather In City</p><br>
+            <p id="temperature">51 F</p><br>
+            <p id="cloudy"></p>
+            <p id="humidity">Humdity: </p>
+            <p id="windspeed">Windspeed: </p>
         </div>
 
     </div>
