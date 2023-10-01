@@ -1,4 +1,6 @@
 
+import WEATHER_API_KEY from "./apikey.js";
+
 //Query Selectors
 let city = document.querySelector('.search'); //class
 let temp = document.querySelector('#temperature');
@@ -9,7 +11,7 @@ let cloudy = document.querySelector('#cloudy');
 
 
 function fetchWeather(city) { //Parameter city passed in, so the api knows what city to get info for
-        fetch('https://api.weatherapi.com/v1/current.json?key=23c5cd760af54f9e864215602233009&q=' + city)
+        fetch('https://api.weatherapi.com/v1/current.json?key='+WEATHER_API_KEY+'&q=' + city)
         .then(response => {
             return response.json();
         })
